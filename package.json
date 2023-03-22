@@ -1,0 +1,10 @@
+{
+  "name": "react-express-file-upload-download-with-auth",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run dev:setup && sudo docker compose -f docker-compose-dev.yaml up --attach backend --attach frontend",
+    "dev:stop": "sudo docker compose -f docker-compose-dev.yaml down",
+    "dev:setup": "cd frontend && npm install && cd ../backend && npm install && cd .."
+  }
+}
